@@ -1,0 +1,12 @@
+section{
+    /* background: aqua; */
+    display:inline-block;
+}
+
+form{
+    /* background: blueviolet; */
+    display:inline-block;
+}
+textarea{
+    display: block;
+}
