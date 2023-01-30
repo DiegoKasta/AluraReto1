@@ -3,32 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <title>Encriptador</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://bootswatch.com/5/sketchy/bootstrap.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ChallengesAlura</title>
 </head>
 <body>
+    <div id="modal" style="display: none;"></div>
     <header>
-        Cabeza
+        <img class="logo" src="	https://www.aluracursos.com/assets/img/challenges/oracle-one/logo-challenge.1657102612.svg" alt="logo de alura" >
+        <span></span>
+        <div class="titulo">Reto 1</div>
     </header>
+    <textarea style="display: none;" id="copia"></textarea>
     <main>
         <section>
-            <textarea name="area" id="areain" cols="30" rows="10" placeholder="Ingrese Datos"></textarea>
-            <input type="button" value="Encriptar" id="encript">
-            <input type="button" value="Desencriptar" id="decript">
+            <div class="container">
+                <div id="all_notes">
+                    <div class="note details noteText" style="background-color: aqua;">Importante ! ...
+                        <ul>
+                            <li>funciona solo con letras minúsculas</li>
+                            <li>no debe utilizar letras con acentos ni caracteres especiales</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
-            <textarea name="area" id="areaout" cols="30" rows="10"></textarea>
-            <input type="button" value="Copiar" id="copy">
+        <section class="areain">
+            <textarea class="text-area" cols="30" rows="10" placeholder="ingrese el texto aqui" id="areain"></textarea>
+            <div>
+                <button type="button" id="button_encript" class="btn btn-success btn-sm styletra">Encriptar</button>
+                <button type="button" value="Desencriptar" id="button_decript" class="btn btn-success btn-sm styletra">Desencriptar</button>
+                <button type="button" id="button_copy" class="btn btn-success btn-sm styletra" style="display: none;">Copiar</button>
         </section>
-
-    
     </main>
     <footer>
-        pie
+        <p>&copy;<a href="https://github.com/DiegoKasta"> Diego Marcel Castañeda, 2023</a></p>
     </footer>
-    
 </body>
-<script src="js/script.js"></script>
-
+<script src="./js/script.js"></script>
 </html>

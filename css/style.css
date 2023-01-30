@@ -1,12 +1,181 @@
+
+body{
+    width: 100%;
+    min-width: 470px;
+    position: relative;
+    /* background-color:  #c68c53a8; */
+    font-family: 'Caveat', cursive;
+    background-image: url("https://us.123rf.com/450wm/dmpank/dmpank1512/dmpank151200003/49607035-textura-del-corcho-vector-sin-patr%C3%B3n-el-fondo-sin-fin-tabl%C3%B3n-de-anuncios.jpg");
+    background-repeat: repeat;
+}
+#modal{
+  display: block;
+  position:fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0px;
+}
+#inner_modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+#inner_modal div{
+    width: 276px;
+    outline: none;
+    font-size: 1.5rem;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.9);
+  }
+header{
+    width: 80%;
+    margin: 20px auto 0px auto;
+    background-color: #bc83e6;
+    transform: rotate(-1deg);
+    padding: 0 20px;
+    min-height: 70px;
+    text-shadow: 1px 1px black;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 55px 225px 15px 25px/25px 25px 35px 355px;
+    box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.75);
+    
+}
+span{
+    width: 80px;
+    height: 70px;
+    margin: -4% 0 0 40%;
+    background-image:url("https://png.vector.me/files/images/3/8/381554/thumbtack_pushpin_2");
+    background-repeat: no-repeat;
+    background-size: 70%;
+    position:absolute;
+}
+.logo{
+    width: 240px;
+    margin-left:2%;    
+}
+.titulo{
+    margin-right:5%;
+    font-family: 'Caveat', cursive;
+    font-size:40px;
+    color: black;
+    font-weight:lighter;
+}
+main{
+    width: 940px;
+    display:flex;
+    padding-top: 40px;
+    margin: 0 auto;
+    
+}
 section{
-    /* background: aqua; */
-    display:inline-block;
+    margin: 0 auto;
+    width: 400px;
+    padding: 0 0 0 10px;
 }
 
-form{
-    /* background: blueviolet; */
-    display:inline-block;
+.areain{
+    height: 400px;
 }
-textarea{
-    display: block;
+.text-area {
+    font-size: large;
+    background: rgb(255, 238, 1);
+    width:80%;
+    margin-top: 30px;
+    border: none;
+    resize: none;
+    padding: 10px;
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+}
+.text-area:focus-visible{
+    outline: none;
+}
+.mensaje{
+    height: 20rem;
+    background: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 24px;
+    color: #0A3871;
+}
+ul{
+    color: rgba(0, 0, 0, 0.485);
+}
+#all_notes{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.note{
+    width:300px;
+    height: 300px;
+    transition: 2s;
+    cursor: pointer;
+    overflow:auto;
+    overflow-wrap: break-word;
+    box-shadow: 0px 10px 24px 0px rgba(0,0,0,0.75);
+    position: absolute;
+    font-family: 'Caveat', cursive;
+}
+.note h1{
+  font-size: 1.5rem;
+  font-family: 'Caveat', cursive;
+}
+.details {
+  margin-top: 25px;
+  padding: 0 15px;
+  font-size: 1.5rem;
+}
+
+.details i{
+  color: whitesmoke;
+  cursor: pointer;
+  text-shadow: 1px 1px #BBB;
+}
+
+.styletra{
+    font-family: 'Caveat', cursive;
+    color: black;
+    font-size: 20px;
+}
+button{
+    transform: rotate(3deg);
+}
+footer p{
+    width: 400px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 25px;
+}
+
+@media(max-width:880px){
+    main{
+        display: block;
+        width: auto;
+    }
+    section{
+        display: block;
+        height: 350px;
+    }
+    .areain{
+        height: 200px;
+    }
+    .text-area {
+        height: 40%;
+        margin-left: 30px;
+    }
+}
+@media(max-width:500px){
+    .logo{
+        margin: 0 auto;
+        width: 180px;
+    }
+    .titulo{
+        margin: 0 auto;
+        font-size: 30px;
+    }
 }
